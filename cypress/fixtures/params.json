@@ -1,0 +1,83 @@
+{
+    "menuOptions": [
+        {
+            "button": "About",
+            "link": "https://consumersenergymanagement.ca/about-us/",
+            "h1": "About Consumers Energy Management Inc."
+        },
+        {
+            "button": "Products",
+            "link": "https://consumersenergymanagement.ca/products/",
+            "h1": "Products"
+        },
+        {
+            "button": "Services",
+            "link": "https://consumersenergymanagement.ca/services/",
+            "h1": "Services"
+        },
+        {
+            "button": "Tools",
+            "link": "https://consumersenergymanagement.ca/tools-resources/",
+            "h1": "Tools & Resources"
+        },
+        {
+            "button": "Promotions",
+            "link": "https://consumersenergymanagement.ca/promotions/",
+            "h1": "Promotions"
+        },
+        {
+            "button": "Careers",
+            "link": "https://consumersenergymanagement.ca/careers/",
+            "h1": "Careers"
+        },
+        {
+            "button": "Blog",
+            "link": "https://consumersenergymanagement.ca/blog/",
+            "h1": "Blog"
+        },
+        {
+            "button": "FAQs",
+            "link": "https://consumersenergymanagement.ca/faq/",
+            "h1": "Frequently Asked Questions"
+        },
+        {
+            "button": "Contact",
+            "link": "https://consumersenergymanagement.ca/contact-us/",
+            "h1": "Contact Us"
+        }
+    ],
+
+    "provincesListOptions" : [
+    {"province": "Alberta"},
+    {"province": "British Columbia"},
+    {"province": "Manitoba"},
+    {"province": "New Brunswick"},
+    {"province": "Newfoundland"},
+    {"province": "Nova Scotia"},
+    {"province": "Nunavut"},
+    {"province": "Ontario"},
+    {"province": "Prince Edward Island"},
+    {"province": "Quebec"},
+    {"province": "Saskatchewan"},
+    {"province": "Yukon"}
+    ],
+
+    "dataForStep1" : [
+    {
+        "province": "Ontario",
+        "city": "Toronto",
+        "stories": "2",
+        "square_feet": "2750",
+        "years": "5"
+
+    }
+    ],
+
+    "currentHeatingSystemOptions": [
+        {"heating_type": "Natural Gas"},
+        {"heating_type": "Propane"},
+        {"heating_type": "Oil"},
+        {"heating_type": "Electric"},
+        {"heating_type": "Heat Pump"}
+    ]
+}
