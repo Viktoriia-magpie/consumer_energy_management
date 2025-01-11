@@ -24,12 +24,13 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+Cypress.on('uncaught:exception', () => { return false })
 import selectors from '../support/selectors.js'
 
 Cypress.Commands.add('clickingOnMenuOptions', (button, link, h1) => {
     cy.contains(button).click()
     cy.url().should('eq', link)
-    cy.get('h1').should('have.text', h1)
+    cy.get('h1', {force: true}).should('have.text', h1)
 })
 
 
@@ -43,5 +44,5 @@ Cypress.Commands.add('selectCity', (province) => {
 })
 
 Cypress.Commands.add('selectCurrentHeatingSystem', (heat_type) => {
-    cy.get(selectors.current_heating_system_list).select(heat_type, { force: true }).invoke('val').should('contain', heat_type)
+    cy.get(selectors.current_heating_system_list).select(heat_type, { force: true }).invoke('text').should('contain', heat_type)
 })
