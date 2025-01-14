@@ -37,7 +37,7 @@ describe('The heat prices calculations test suit for Savings calculator', () => 
             cy.get(selectors.new_heating_cost).should('not.have.text', '$0.00')
             cy.get(selectors.new_heating_cost).should('not.have.text', previousNewCost)
             cy.get(selectors.new_heating_cost).invoke('text').then((text) => {
-                previousNewCost = text.trim;
+                previousNewCost = text.trim();
             })
         })
     })
