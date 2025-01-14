@@ -79,5 +79,33 @@
         {"heating_type": "Oil"},
         {"heating_type": "Electric"},
         {"heating_type": "Heat Pump"}
+    ],
+
+    "newHeatingSystemOptions": [
+        {"new_heating_type": "Natural Gas"},
+        {"new_heating_type": "Propane"},
+        {"new_heating_type": "Oil"},
+        {"new_heating_type": "Electric"},
+        {"new_heating_type": "Heat Pump"},
+        {"new_heating_type": "Dual Fuel-Natural Gas"},
+        {"new_heating_type": "Dual Fuel-Oil"},
+        {"new_heating_type": "Dual Fuel-Propane"}
+    ],
+
+    "dataForStep2": [
+        {
+            "current_heating_type": "Electric",
+            "new_heating_type": "Natural Gas"
+        },
+
+        {
+            "current_heating_type": "Heat Pump",
+            "new_heating_type": "Dual Fuel-Oil"
+        },
+
+        {
+            "current_heating_type": "Propane",
+            "new_heating_type": "Electric"
+        }
     ]
 }

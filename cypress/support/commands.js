@@ -46,3 +46,12 @@ Cypress.Commands.add('selectCity', (province) => {
 Cypress.Commands.add('selectCurrentHeatingSystem', (heat_type) => {
     cy.get(selectors.current_heating_system_list).select(heat_type, { force: true }).invoke('text').should('contain', heat_type)
 })
+
+Cypress.Commands.add('selectNewHeatingSystem', (new_heat_type) => {
+cy.get(selectors.new_heating_system_list).select(new_heat_type, { force:true }).invoke('text').should('contain', new_heat_type)
+})
+
+Cypress.Commands.add('populateStep2', (current_heating_type, new_heating_type) => {
+    cy.get(selectors.current_heating_system_list).select(current_heating_type, { force: true }).invoke('text').should('contain', current_heating_type)
+    cy.get(selectors.new_heating_system_list).select(new_heating_type, { force:true }).invoke('text').should('contain', new_heating_type)
+})
